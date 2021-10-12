@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #262626FF;
+	
+}
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 100px;
+	width: 300px;
+	border: 2px solid lime;
+	box-shadow: 1px 1px 20px black;
+	border-radius: 50px;
+}
+.button:hover{
+	animation: neon 1s linear 1 forwards;
+	cursor: pointer;
+}
+@keyframes neon{
+	0%{
+		background-color: lime;
+		box-shadow: 1px 1px 20px limegreen;
+	}
+	50%{
+		background-color: lime;
+		box-shadow: 1px 1px 40px limegreen;
+	}
+	100%{
+		background-color: lime;
+		box-shadow: 1px 1px 60px limegreen;
+	}
+}
